@@ -64,9 +64,9 @@ app.post('/createNewMonthForUser', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.send('Express on Vercel');
+  res.status(200);
+  res.send('This is from root');
 });
-
 const PORT = process.env.PORT || 5000; // Use the PORT environment variable if it's set, otherwise use 5000
 
 app.listen(PORT, () => {
